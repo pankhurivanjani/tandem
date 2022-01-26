@@ -12,6 +12,7 @@ For the paper we used CUDA 11.1, cuDNN 8.0.5, and `libtorch-1.9.0+cu111` with CU
 Set cuda environment:
 
 $ export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
+
 $ export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64\ {LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
                          
 + Install **cuDNN** from [nvidia.com](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html). Make sure to install a version that exactly matches your CUDA and PyTorch versions.
@@ -34,8 +35,8 @@ export TANDEM_CUDNN_LIBRARY=/path/to/cudnn/lib64
 export TANDEM_CUDNN_INCLUDE_PATH=/path/to/cudnn/include
 ```
 ```
-export TANDEM_CUDNN_LIBRARY=/home/vanjani/Downloads/cuda/lib64
-export TANDEM_CUDNN_INCLUDE_PATH=/home/vanjani/Downloads/cuda/include
+(tandem) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_CUDNN_LIBRARY=/home/vanjani/cuda/lib64
+(tandem) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_CUDNN_INCLUDE_PATH=/home/vanjani/cuda/include
 export TANDEM_LIBTORCH_DIR=/home/vanjani/libtorch
 ```
 + Install **LibTorch** from [pytorch.org](https://pytorch.org/get-started/locally/). For our exact version you can use
