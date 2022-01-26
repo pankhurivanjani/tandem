@@ -14,7 +14,11 @@ For the paper we used CUDA 11.1, cuDNN 8.0.5, and `libtorch-1.9.0+cu111` with CU
 export TANDEM_CUDNN_LIBRARY=/path/to/cudnn/lib64
 export TANDEM_CUDNN_INCLUDE_PATH=/path/to/cudnn/include
 ```
-
+```
+export TANDEM_CUDNN_LIBRARY=/home/vanjani/Downloads/cuda/lib64
+export TANDEM_CUDNN_INCLUDE_PATH=/home/vanjani/Downloads/cuda/include
+export TANDEM_LIBTORCH_DIR=/home/vanjani/libtorch
+```
 + Install **LibTorch** from [pytorch.org](https://pytorch.org/get-started/locally/). For our exact version you can use
 ```
 wget https://download.pytorch.org/libtorch/cu111/libtorch-cxx11-abi-shared-with-deps-1.9.0%2Bcu111.zip
