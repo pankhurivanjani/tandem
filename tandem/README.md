@@ -296,3 +296,8 @@ Please consider citing DSO and TANDEM if you use this code. Please cite the EuRo
  year = {2021}
 }
 ```
+### 8.Other Error corrections:
+
+nvcc fatal   : redefinition of argument 'std'
+
+commented stdc++ at 2 places in code as mentioned here https://codeyarns.com/tech/2017-12-22-nvcc-argument-redefinition-error.html
