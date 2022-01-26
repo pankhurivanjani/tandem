@@ -10,6 +10,20 @@ For the paper we used CUDA 11.1, cuDNN 8.0.5, and `libtorch-1.9.0+cu111` with CU
 + Install **CUDA** from [nvidia.com](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html). Make sure that this doesn't interfere with other packages on your system and maybe ask your system administrator. CUDA 11.1 should be in your path, e.g. setting `CUDA_HOME`, `LD_LIBRARY_PATH` and `PATH` should be sufficient. You can also set the symlink `/usr/local/cuda`.
 
 + Install **cuDNN** from [nvidia.com](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html). Make sure to install a version that exactly matches your CUDA and PyTorch versions.
+
+$ cd folder/extracted/contents
+$ sudo cp include/cudnn.h /usr/local/cuda/include
+$ sudo cp lib64/libcudnn* /usr/local/cuda/lib64
+$ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+
+Check version
+You might have to adjust the path. See step 2 of the installation.
+
+$ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+edit: In later versions this might be the following (credits to Aris)
+
+$ cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+
 ```
 export TANDEM_CUDNN_LIBRARY=/path/to/cudnn/lib64
 export TANDEM_CUDNN_INCLUDE_PATH=/path/to/cudnn/include
