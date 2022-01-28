@@ -330,3 +330,7 @@ MANY Error solvedby installing cuda 11
 
 Errors related to atoi,, malloc not found: Use this #include <cstdlib>
  error: ‘start’, elapsed does not name a type
+  
+ for error with cnpy; clone this repo, https://github.com/rogersce/cnpy then build make and install
+  
+  
