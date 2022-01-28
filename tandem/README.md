@@ -327,3 +327,6 @@ commented stdc++ at 2 places in code as mentioned here https://codeyarns.com/tec
 sophus error: cd sophud mkdir build cmake.. make sudo make instalL
 
 MANY Error solvedby installing cuda 11
+
+Errors related to atoi,, malloc not found: Use this #include <cstdlib>
+ error: ‘start’, elapsed does not name a type
