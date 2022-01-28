@@ -50,7 +50,22 @@ export TANDEM_LIBTORCH_DIR=/home/vanjani/libtorch
 wget https://download.pytorch.org/libtorch/cu111/libtorch-cxx11-abi-shared-with-deps-1.9.0%2Bcu111.zip
 export TANDEM_LIBTORCH_DIR=/path/to/unziped/libtorch
 ```
+###Final
 
+```
+(tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
+(tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib64\ {LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+(tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_CUDNN_LIBRARY=/usr/local/cuda/lib64(tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_CUDNN_INCLUDE_PATH=/usr/local/cuda/include
+(tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_LIBTORCH_DIR=/home/vanjani/libtorch
+(tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ cmake .. \
+>     -DCMAKE_BUILD_TYPE=Release \
+>     -DCMAKE_PREFIX_PATH=$TANDEM_LIBTORCH_DIR \
+>     -DCUDNN_LIBRARY=$TANDEM_CUDNN_LIBRARY \
+>     -DCUDNN_INCLUDE_PATH=$TANDEM_CUDNN_INCLUDE_PATH
+-- The C compiler identification is GNU 5.5.0
+
+```
 
 #### 1.2 Further Dependencies
 
