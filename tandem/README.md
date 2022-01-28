@@ -8,13 +8,17 @@ We list the required dependencies for TANDEM in `1.1` and further dependencies i
 For the paper we used CUDA 11.1, cuDNN 8.0.5, and `libtorch-1.9.0+cu111` with CUDA support and CXX11 ABI. However, we assume that the code should work with a broad range of versions because it doesn't use version-specific features. We can sadly not offer a convenient installation script due to (a) different CUDA installation options and (b) the cuDNN download method that needs user input. You have to:
 
 + Install **CUDA** from [nvidia.com](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html). Make sure that this doesn't interfere with other packages on your system and maybe ask your system administrator. CUDA 11.1 should be in your path, e.g. setting `CUDA_HOME`, `LD_LIBRARY_PATH` and `PATH` should be sufficient. You can also set the symlink `/usr/local/cuda`.
+```
 
 Set cuda environment:
 
 $ export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
 
 $ export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64\ {LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-                         
+```
+
+                                    
+                                     
 + Install **cuDNN** from [nvidia.com](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html). Make sure to install a version that exactly matches your CUDA and PyTorch versions.
 
 $ cd folder/extracted/contents
@@ -24,11 +28,13 @@ $ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 
 Check version
 You might have to adjust the path. See step 2 of the installation.
+```
 
 $ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 edit: In later versions this might be the following (credits to Aris)
 
 $ cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+```
 
 ```
 export TANDEM_CUDNN_LIBRARY=/path/to/cudnn/lib64
