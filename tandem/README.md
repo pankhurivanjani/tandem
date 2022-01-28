@@ -12,9 +12,9 @@ For the paper we used CUDA 11.1, cuDNN 8.0.5, and `libtorch-1.9.0+cu111` with CU
 
 Set cuda environment:
 
-$ export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
+$ export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
 
-$ export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64\ {LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+$ export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib64\ {LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
                                     
