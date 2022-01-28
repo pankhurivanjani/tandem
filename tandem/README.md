@@ -333,4 +333,7 @@ Errors related to atoi,, malloc not found: Use this #include <cstdlib>
   
  for error with cnpy; clone this repo, https://github.com/rogersce/cnpy then build make and install
   
+ sophus error solution: https://github.com/tum-vision/tandem/issues/9#issuecomment-1010102379
+  
+  
   
