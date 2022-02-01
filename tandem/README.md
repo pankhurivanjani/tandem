@@ -341,3 +341,5 @@ Errors related to atoi,, malloc not found: Use this #include <cstdlib>
  sophus error solution: https://github.com/tum-vision/tandem/issues/9#issuecomment-1010102379
   
   C++11 Compilation error in cuda parser: upgrade to g++7 if flag seting doesn't work
+  
+  Pangolin gldrawcoloredvertices errror: YOu have wrong or new version of Pangolin, try other one. THis one probably https://github.com/stevenlovegrove/Pangolin/tree/b6cecf4e5faaa9cf6039f98c8d263cbc169f0b5d worked. I Downloaded, built and installed this 
