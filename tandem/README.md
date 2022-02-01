@@ -21,10 +21,15 @@ $ export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib64\ {LD_LIBRARY_PATH:+:${LD_LIB
                                      
 + Install **cuDNN** from [nvidia.com](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html). Make sure to install a version that exactly matches your CUDA and PyTorch versions.
 
+```
+
 $ cd folder/extracted/contents
 $ sudo cp include/cudnn.h /usr/local/cuda/include
 $ sudo cp lib64/libcudnn* /usr/local/cuda/lib64
 $ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+
+```
+
 
 Check version
 You might have to adjust the path. See step 2 of the installation.
