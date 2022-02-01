@@ -340,5 +340,4 @@ Errors related to atoi,, malloc not found: Use this #include <cstdlib>
   
  sophus error solution: https://github.com/tum-vision/tandem/issues/9#issuecomment-1010102379
   
-  C++11 Compilation error in cuda parser: NOT SOLVED YET, Worth to look at this https://www.titanwolf.org/Network/q/4007762b-2e8f-4263-84a8-dc1614fd8b91/y
-  
+  C++11 Compilation error in cuda parser: upgrade to g++7 if flag seting doesn't work
