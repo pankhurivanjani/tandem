@@ -47,7 +47,9 @@ export TANDEM_CUDNN_INCLUDE_PATH=/path/to/cudnn/include
 ```
 ```
 (tandem) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_CUDNN_LIBRARY=/home/vanjani/cuda/lib64
+
 (tandem) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_CUDNN_INCLUDE_PATH=/home/vanjani/cuda/include
+
 export TANDEM_LIBTORCH_DIR=/home/vanjani/libtorch
 ```
 + Install **LibTorch** from [pytorch.org](https://pytorch.org/get-started/locally/). For our exact version you can use
@@ -61,7 +63,9 @@ export TANDEM_LIBTORCH_DIR=/path/to/unziped/libtorch
 (tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
 (tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib64\ {LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
-(tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_CUDNN_LIBRARY=/usr/local/cuda/lib64(tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_CUDNN_INCLUDE_PATH=/usr/local/cuda/include
+(tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_CUDNN_LIBRARY=/usr/local/cuda/lib64
+
+(tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_CUDNN_INCLUDE_PATH=/usr/local/cuda/include
 (tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ export TANDEM_LIBTORCH_DIR=/home/vanjani/libtorch
 (tandem-exp) vanjani@port-2118:~/tandem/tandem/build$ cmake .. \
 >     -DCMAKE_BUILD_TYPE=Release \
